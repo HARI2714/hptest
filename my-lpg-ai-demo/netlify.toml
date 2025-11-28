@@ -1,10 +1,4 @@
-[build]
-  # "." tells Netlify to serve the index.html from the root folder
-  publish = "." 
-  
-  # This prevents Netlify from trying to run a build command if you don't need one
-  command = "" 
-
-[functions]
-  # Explicitly points to your functions directory
-  directory = "netlify/functions"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
